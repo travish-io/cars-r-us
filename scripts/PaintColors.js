@@ -1,11 +1,11 @@
-import { getPaintColors } from "./database";
+import { getPaintColors , setPaintColor } from "./database.js";
 const paintColors = getPaintColors();
 
-// document.addEventListener("change", (event) => {
-//   if (event.target.name === "paintColor") {
-//     setSize(parseInt(event.target.value));
-//   }
-// });
+document.addEventListener("change", (event) => {
+  if (event.target.name === "paintColor") {
+    setPaintColor(parseInt(event.target.value));
+  }
+});
 
 export const PaintColors = () => {
   let html = "<ul>";

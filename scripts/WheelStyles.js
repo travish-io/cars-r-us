@@ -1,11 +1,11 @@
-import { getWheelStyles } from "./database";
+import { getWheelStyles, setWheelStyle } from "./database.js";
 
 const wheelStyles = getWheelStyles();
-// document.addEventListener("change", (event) => {
-//   if (event.target.name === "wheelStyle") {
-//     setSize(parseInt(event.target.value));
-//   }
-// });
+document.addEventListener("change", (event) => {
+  if (event.target.name === "wheelStyle") {
+    setWheelStyle(parseInt(event.target.value));
+  }
+});
 
 export const WheelStyles = () => {
   let html = "<ul>";

@@ -1,4 +1,4 @@
-import { PaintColors } from "./PaintColors";
+import { PaintColors } from "./PaintColors.js";
 import { InteriorMaterials } from "./InteriorMaterials.js";
 import { TechnologyPackages } from "./TechnologyPackages.js";
 import { WheelStyles } from "./WheelStyles.js";

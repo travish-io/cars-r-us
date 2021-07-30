@@ -1,11 +1,11 @@
-import { getTechnologyPackages } from "./database";
+import { getTechnologyPackages, setTechnologyPackage } from "./database.js";
 
 const technologyPackages = getTechnologyPackages();
-// document.addEventListener("change", (event) => {
-//   if (event.target.name === "technologyPackage") {
-//     setSize(parseInt(event.target.value));
-//   }
-// });
+document.addEventListener("change", (event) => {
+  if (event.target.name === "technologyPackage") {
+    setTechnologyPackage(parseInt(event.target.value));
+  }
+});
 
 export const TechnologyPackages = () => {
   let html = "<ul>";
