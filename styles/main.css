@@ -1,4 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap");
+
+body {
+  font-family: "Oswald", sans-serif;
+}
 ul {
   list-style-type: none;
   padding-inline-start: 0.25rem;
+}
+.choices {
+  display: flex;
+  justify-content: space-around;
+}
+.orderButton {
+  display: flex;
+  justify-content: center;
+}
+#orderButton {
+  margin: 1rem 0;
+  padding: 0.5rem;
+  background-color: rgb(227, 72, 72);
+  color: lightgoldenrodyellow;
+  font-size: 1rem;
+}
+.customOrders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
