@@ -52,6 +52,9 @@ export const getTechnologyPackages = () => {
 export const getWheelStyles = () => {
   return database.wheelStyles.map((wheelStyle) => ({ ...wheelStyle }));
 };
+export const getOrders = () => {
+  return database.customOrders.map((order) => ({ ...order }));
+};
 export const setPaintColor = (id) => {
   database.orderBuilder.paintColorId = id;
 };
