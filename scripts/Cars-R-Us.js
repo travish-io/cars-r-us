@@ -2,9 +2,12 @@ import { PaintColors } from "./PaintColors.js";
 import { InteriorMaterials } from "./InteriorMaterials.js";
 import { TechnologyPackages } from "./TechnologyPackages.js";
 import { WheelStyles } from "./WheelStyles.js";
-// document.addEventListener("click", (event) => {
-//   if (event.target.id === "orderButton") addCustomOrder();
-// });
+import { addCustomOrder } from "./database.js";
+import { Orders } from "./Orders.js";
+document.addEventListener("click", (event) => {
+  if (event.target.id === "orderButton") addCustomOrder();
+});
+
 export const CarsRUs = () => {
   return `
         <h1>Cars-R-Us</h1>
@@ -34,7 +37,7 @@ export const CarsRUs = () => {
             
             <article class="customOrders">
             <h2>Custom Car Orders</h2>
-            Orders Fn Here
+            ${Orders()}
         </article>
     `;
 };
