@@ -4,7 +4,6 @@ import { TechnologyPackages } from "./TechnologyPackages.js";
 import { WheelStyles } from "./WheelStyles.js";
 import { addCustomOrder } from "./database.js";
 import { Orders } from "./Orders.js";
-
 document.addEventListener("click", (event) => {
   if (event.target.id === "orderButton") addCustomOrder();
 });
